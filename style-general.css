@@ -541,33 +541,65 @@ body{
 
 /* -------------------- FOOTER -------------------- */
 
-
-
 footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  flex-direction: column;
   background-image: url('Images/Footer/fond_pied_de_page.png');
-  background-size: cover;         /* Pour couvrir tout le footer */
-  background-repeat: no-repeat;   /* Empêche la répétition */
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center; 
-
-  color: white; /* facultatif : pour s'assurer que le texte reste lisible */
-  padding: 50px;
-  padding-bottom: 20px;
-  margin-top: 200px;
+  color: white;
+  padding: 2em;
+  margin-top: 20vh;
   opacity: 96%;
   width: 100vw;
 }
 
-
-.footer-left,
-.footer-right {
+.footer-top {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  gap: 2em;
+  text-align: center;
+  margin-bottom: 8em;
+  margin-left: 0;
 }
 
+.footer-top > div {
+  flex: 1;
+  max-width: 30vw;
+  display: flex;
+  flex-direction: column;  /* empile les éléments verticalement */
+  align-items: center;     /* centre horizontalement les éléments */
+}
+
+.footer-top h3 {
+  margin: 1em;
+  font-size: 1em;
+}
+
+.footer-top a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5em 0; /* marge verticale seulement */
+  display: block;  /* force l'affichage en bloc pour éviter les bugs */
+}
+
+
+
+
+
+
+
+
+/* Partie basse inchangée sauf container */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Centre toujours centré */
 .footer-center {
   position: absolute;
   left: 50%;
@@ -576,34 +608,24 @@ footer {
   align-items: center;
 }
 
-footer img{
-  height: 60px;
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
 }
 
-.footer-center img{
-  height: 65px;
-}
 
 .footer-left a {
   margin-right: 10px;
 }
 
-
-.footer-right p {
-  margin: 0;
+footer img {
+  height: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.footer-center img {
+  height: 65px;
+}
 
 
 
@@ -637,31 +659,6 @@ main {
 
 
 /* Footer responsive */
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #29302a;
-  color: white;
-  text-align: center;
-}
-
-.footer-left, .footer-center, .footer-right {
-  flex: 1 1 100%;
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-left a,
-.footer-center img,
-.footer-right p {
-  margin: 0 10px;
-}
-
 @media (min-width: 768px) {
   .footer-left, .footer-center, .footer-right {
       flex: 1;
