@@ -518,9 +518,67 @@
   
 
 
+  
+  .phases-container {
+    display: flex;
+    border: 2px solid #6a7a53;
+    flex-wrap: wrap; /* pour une meilleure adaptabilité */
+    margin: 2em 7vw;
+  }
+  
+  .phase {
+    flex: 1;
+    border-right: 1px solid #6a7a53;
+    min-width: 250px; /* optionnel pour le responsive */
+  }
+  
+  .phase:last-child {
+    border-right: none;
+  }
+  
+  .phase-header {
+    background-color: #5b6747;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    height: 2.2em;
+  }
+  
+  .phase-subheader {
+    background-color: #3f4d30;
+    color: #ffc107;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    height: 1.2em;
+  }
+  
+  .phase-content {
+    background-color: #d6dcd2;
+    padding: 15px;
+    font-style: italic;
+    text-align: center;
+    height: 4.2em;
+  }
 
 
 
+  .offre-phase p{
+    color: white;
+    margin: 5em 7vw;
+    margin-bottom: 3vw;
+  }
+
+  .offre-phase p:last-of-type {
+    font-style: italic;
+    margin-top: 0px;
+  }
+
+  .offre-phase .highlight-orange{
+    font-style: italic;
+  }
+  
 
 
 
