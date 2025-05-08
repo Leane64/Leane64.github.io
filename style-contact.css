@@ -1,0 +1,284 @@
+h1{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.right-content h3{
+    margin-top: 200px;
+}
+
+.confirmation p{
+  color:white;
+  text-align: center;
+  margin: 100px;
+  font-size: 1.5em;
+}
+
+.confirmation h3{
+  margin-left: 0px;
+  font-size: 1.7em;
+}
+
+
+.contact-button{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    align-items: stretch;
+    gap: 30px;
+    margin: 50px 100px 70px 100px;
+    color: white;
+  }
+  
+  .contact p{
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .contact img{
+
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    width: 350px;
+    height: 200px;;
+    padding: 20px;
+  }
+
+
+  .entreprise,
+  .candidat {
+    background-color: #61615b;
+    display: flex;
+    flex-direction: column; /* pour empiler image + texte */
+    align-items: center;     /* centrer horizontalement */
+    justify-content: center; /* centrer verticalement */
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .formulaire {
+    background: #61615b;
+    margin: 50px 100px 50px 100px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;
+    align-items: center; */
+    font-family: Arial, sans-serif;
+}
+
+
+
+label{
+    color: white;
+    display: block;
+    margin-top: 10px;
+
+  }
+
+
+input, textarea {
+    background-color: #61615b;
+    border: 2px solid #ffcc32;
+    border-radius: 20px;
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding: 10px 0px 10px 20px; */
+    width: 95%;
+    margin-bottom: 40px;
+    color: white; 
+    font-family: Arial, sans-serif; 
+    font-size: 15px;
+}
+
+textarea{
+    padding-bottom: 100px;
+}
+
+::placeholder {
+    color: #888; /* Couleur du texte placeholder */
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.visio-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.visio-options input[type="radio"] {
+    display: none;
+}
+
+.visio-options label {
+    background-color: #61615b;
+    border: 2px solid #ffcc32;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.visio-options input[type="radio"]:checked + label {
+    background-color: #ffcc32;
+    color: #61615b;
+    font-weight: bold;
+}
+
+
+
+
+.checkbox-container {
+    display: flex;
+    align-items: top;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ffcc32; /* couleur de la coche */
+    background-color: yellow;
+    border: 2px solid #ffcc32;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.checkbox-container label {
+    color: white;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+
+
+.submit-button {
+    display: flex; /* Correcte syntaxe flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: 2px solid #7a4401;
+    border-radius: 50px; /* Bordure ovale */
+    background-color: #bc4d06;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content; /* Optionnel : ajuster la largeur au contenu */
+    margin-left: auto; /* Ajout d'auto pour un centrage parfait */
+    margin-right: auto;
+  }
+
+
+  .submit-button:hover {
+    background-color: #ffb300;
+    color: black;
+    border-color: black;
+  }
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+  .infos-pratiques {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    background-color: #61615b;
+    color: white;
+    margin: 70px 140px 100px 140px;
+    padding: 2rem;
+    padding-right: 0px;
+  }
+  
+  .ligne {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #ffcc32;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .label, .valeur {
+    margin: 0;
+    align-items: center;
+  }
+  
+  .logo {
+    grid-column: 3;
+    grid-row: 1 / span 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    max-width: 2fr;
+    height: auto;
+  }
+  

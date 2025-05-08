@@ -1,0 +1,80 @@
+.notre-equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;                          
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  
+  .notre-equipe img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  
+    border-radius: 6px;
+  }
+  
+  .carte-membre {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .carte-membre .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1fr;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5); /* blanc transparent à 50% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  .carte-membre:hover .overlay {
+    opacity: 1;
+  }
+  
+  .carte-membre .overlay .texte h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .carte-membre .overlay .texte h5 {
+    margin: 5px 0 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .carte-membre .overlay .texte p {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+  }
+  
+  /* Responsive : 2 colonnes sur tablette, 1 sur mobile 
+  @media (max-width: 900px) {
+    .notre-equipe {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .notre-equipe {
+      grid-template-columns: 1fr;
+    }
+  }
+  */
+
+

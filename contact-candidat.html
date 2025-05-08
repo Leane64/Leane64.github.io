@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>OAK-Innovation</title>
+        <link rel="stylesheet" href="style-general.css">
+        <link rel="stylesheet" href="style-contact.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Tektur:wght@400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <!--  <h1>OAK-Innovation</h1>  Pas besoin si le nom est dans le logo -->
+                <img src="Images/OAK-Innovation-logo.png" title="Logo OAK innovation" alt="Logo OAK innovation">
+            </a>
+
+            <nav>
+                <div class="dropdown">
+                    <span class="menu-title">A propos</span>
+                    <div class="dropdown-content">
+                        <a href="qui-sommes-nous.html">Qui sommes-nous ?</a>
+                        <a href="notre-histoire.html">Notre histoire</a>
+                        <a href="notre-equipe.html">L'équipe</a>
+                        <a href="on-parle-de-nous.html">La presse</a>
+
+                      
+                    </div>
+                </div>
+                <a href="expertise.html">Expertise</a>
+                <a href="biomimetisme.html">Biomimétisme</a>
+                
+                <a href="contact.html" class="menu-title active">Contact & Infos</a>
+
+            </nav>
+        </header>
+
+
+        
+
+        <main>
+            <div class="background"></div>
+
+            <section class="top-page">
+                <h1> Offres d’emploi </h1>
+                <hr class="separator">
+                <p>Vous souhaitez rejoindre une équipe jeune et dynamique, soucieuse des enjeux environnementaux de demain ? Alors n’hésitez plus et postulez à nos offres d’emploi.</p>
+
+            </section>
+
+            <section>
+                <div class="left-content">
+                    <h3> Découvrez nos offres d’emploi</h3>
+                    <div class="text-left"> Aucune offre à pourvoir. </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="right-content">
+                    <h3> Votre candidature spontanée</h3>
+                    <div class="text-right">Vous ne trouvez pas l'offre parfaite ? Explorons les opportunités ensemble !</div>
+                </div>
+            </section>
+
+            <section>
+
+                <div class="formulaire">
+
+                    <form action="formulaire-candidat.php" method="post">
+
+                        <!-- <fieldset> </fieldset> -->
+                            <!-- <legend>Vos coordonnées</legend>  Titre du fieldset --> 
+                            <div>
+                                <label for="prenom">Prénom *</label><br>
+                                <input type="text" name="prenom" id="prenom" required>
+                            </div>
+                        
+                            <div>
+                                <label for="nom">Nom *</label><br>
+                                <input type="text" name="nom" id="nom" required>
+                            </div>
+                                            
+                            <div>
+                                <label for="email">E-mail *</label><br>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+
+                            <div>
+                                <label for="message">Votre message *</label><br>
+                                <textarea name="message" id="message" required></textarea>
+                            </div>
+
+
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                                <label for="confidentialite">
+                                    En cochant cette case, j’accepte que mes informations soient collectées et utilisées dans le cadre de ma demande, conformément à la Politique de Confidentialité. *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-button">Soumettre</button>
+
+                    </form>
+                </div>
+
+            </section>
+
+  
+
+
+
+        </main>
+
+        <footer>
+            <a href="https://www.linkedin.com/company/oakinnovation/about/">LinkedIn </a>
+        </footer>
+
+    </body>
+</html>
