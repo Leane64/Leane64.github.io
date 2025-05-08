@@ -21,6 +21,7 @@
     overflow-x: hidden; /* Cache tout débordement horizontal */
   }
 
+
   
 
 
@@ -284,7 +285,7 @@ h3 {
   .contact-button {
     display: inline-block;
     padding: 10px 25px;
-    margin-top: 20px;
+    margin-top: 1.3em;
     border: 2px solid #7a4401;
     border-radius: 50px; /* Bordure ovale */
     background-color: #bc4d06;
@@ -300,7 +301,6 @@ h3 {
   .contact-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
   
   /* Optionnel : effet au survol */
@@ -310,12 +310,17 @@ h3 {
     border-color: black;
   }
   
-  /* Responsive : taille du bouton adaptée aux petits écrans */
-  @media (max-width: 480px) {
+
+  
+  @media screen and (orientation: portrait) {
     .contact-button {
-      padding: 8px 18px;
-      font-size: 14px;
+      padding: 0.5em 1.7em;
+      font-size: 1.3em;
+  
+
     }
+  
+  
   }
   
   

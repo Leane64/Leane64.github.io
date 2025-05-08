@@ -47,7 +47,7 @@ body.home h2 {
 
 .separator-home {
     border: 0.1em solid rgba(186, 115, 0); 
-    height: 0.3em;
+    height: 0.2em;
     background-color: rgba(243, 199, 87);
     width: 60vw;      /* ou 100% si tu veux que ça aille d’un bord à l’autre */
     margin: 0em auto;
@@ -94,11 +94,9 @@ body.home h2 {
   }
 
   body.home h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin-bottom: 2em;
   }
-
-
 
 
 }
