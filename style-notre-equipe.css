@@ -40,6 +40,10 @@
   .carte-membre:hover .overlay {
     opacity: 1;
   }
+
+  .carte-membre.active .overlay {
+    opacity: 1;
+  }
   
   .carte-membre .overlay .texte h4 {
     margin: 0;

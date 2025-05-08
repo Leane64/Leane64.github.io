@@ -15,3 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+
+
+
+
+
+//Pour l'overlay biomim + equipe
+  function toggleOverlay(element) {
+    element.classList.toggle('active');
+  }

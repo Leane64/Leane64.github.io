@@ -183,6 +183,13 @@ h3 {
     text-shadow: initial;
   }
 
+  .highlight-darkorange {
+    color: #712e05;
+    font-weight: bold; /* optionnel si tu veux le faire ressortir un peu plus */
+    font-style: initial;
+    text-shadow: initial;
+  }
+
 
 
 
