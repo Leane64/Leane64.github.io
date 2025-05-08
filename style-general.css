@@ -291,7 +291,7 @@ h3 {
     border: 1px solid rgba(186, 115, 0); 
     height: 1.5px;
     background-color: rgba(243, 199, 87);
-    width: 45%;      /* ou 100% si tu veux que ça aille d’un bord à l’autre */
+    width: 45vw;      /* ou 100% si tu veux que ça aille d’un bord à l’autre */
     margin: 10px auto;
     border-radius: 3px;
   }
