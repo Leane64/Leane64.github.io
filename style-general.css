@@ -69,12 +69,13 @@ header {
   
   header img {
     height: auto;
-    max-width: 40vh;
+    max-width: 20vw;
     object-fit: contain; /* les proportions restent intacts */
     /*
     
     height: auto;  à ajuster selon la taille de ton logo */
   }
+
 
   section.top-page p {
     color: white;
@@ -84,8 +85,7 @@ header {
     /*font-family: 'Source Serif Pro', serif; 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  */
     line-height: 1.4;
-    margin-left: 1em;
-    margin-right: 10em;
+    margin: 3em 4em;
     font-weight: bolder; 
     text-shadow: 
     -1px -1px 0 #5c5447, /* essayer avec #5c5447 */
@@ -98,6 +98,14 @@ header {
      padding: 0px;
 }
 
+@media screen and (orientation: portrait) {
+  .header img {
+    max-width: 20vw;
+  }
+
+
+}
+
 
 
 
@@ -108,8 +116,8 @@ h1 {
     color: white;
     font-size: 2em;
     text-align: center;
-    padding: 20px;
-    margin-top: 25px;
+    padding: 0.5em;
+    margin-top: 0.7em;
     margin-bottom: 0px;
     font-weight: 600;  
     text-shadow: 
@@ -122,8 +130,11 @@ h1 {
 }
 
 
-
-
+@media screen and (orientation: portrait) {
+  h1{
+    font-size: 3em;
+  }
+}
 
 
 
@@ -132,9 +143,9 @@ h2 {
     font-size: 2em;
     text-align: center;
     
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
     font-weight: bold;
     font-family: Michroma, sans-serif;
 
