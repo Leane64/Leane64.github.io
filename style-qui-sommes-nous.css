@@ -78,15 +78,15 @@
         -1px 1px 0 #5c5447,
         1px 1px 0 #5c5447,
         1px 1px 0 rgba(0, 0, 0, 0.7);
-    padding-top : 20px;
-    padding-bottom: 20px;
+    padding-top : 1.5em;
+    padding-bottom: 1.5em;
 
 }
 
 .mosaique-biomim-background{
     background-color: #61615b;  
     margin: 7vw;
-    margin-top: 10px;
+    margin-top: 1.2em;
     margin-bottom: 0px;
 }
 
@@ -95,15 +95,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto; /* s'ajuste selon le contenu */
-    gap: 20px;
-    margin: 50px;
+    gap: 1em;
+    margin: 1.8em;
     margin-top: 0px;
     align-items: center;
 }
 
 .mosaique-biomim img{
     width: 100%;
-    height: 250px;
+    height: 50vh;
     display: block;
     border-radius: 6px;
 
