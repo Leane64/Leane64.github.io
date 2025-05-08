@@ -103,6 +103,10 @@ header {
     max-width: 20vw;
   }
 
+  section.top-page p {
+    font-size: 0.5em;
+}
+
 
 }
 
