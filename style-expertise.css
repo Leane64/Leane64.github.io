@@ -29,9 +29,9 @@
   gap: 0rem; /* espace entre les colonnes */
   align-items: center; /* aligne verticalement les éléments au centre */
   padding: 0px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 3em;
   color: white;
 }
 
@@ -76,7 +76,7 @@
     width: 90%;
     height: auto;
     display: block;
-    margin-left: 50px;
+    margin-left: 4vw;
   }
 
 
@@ -129,12 +129,11 @@
     grid-template-columns: 1fr 1fr; /* 2 colonnes égales */
     grid-template-rows: auto auto; /* 2 lignes automatiques */
     gap: 0px; /* espace entre les cellules */
-    padding: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: -40px;
+    padding: 2em;
+    margin-left: 7vw;
+    margin-right: 7vw;
     color: white;
-    margin-bottom: 200px;
+    margin-bottom: 7em;
 
   }
 
@@ -151,7 +150,7 @@
     gap: 0px;
     height: 250px;
     border-right: 1.5px solid #ffcc32;
-    padding-top: 50px;
+    padding-top: 3em;
   }
   
   
@@ -193,15 +192,23 @@
   .top-right {
     grid-column: 2;
     grid-row: 1;
-    padding: 20px;
+    padding: 1.5em;
     padding-top: 50px;
+  }
+
+  .top-right p, h3{
+    text-align: left ;
   }
   
   .bottom-left {
     grid-column: 1;
     grid-row: 2;
-    padding: 20px;
+    padding: 1.5em;
     border-right: 1.5px solid #ffcc32;
+  }
+
+  .bottom-left  p, h3{
+    text-align: left ;
   }
   
   .bottom-right {
@@ -240,12 +247,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
-    padding: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
+    padding: 1.5em;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 7vw;
     color: white;
-    margin-bottom: 200px;   
+    margin-bottom: 5em;   
   }
   
   /* Positionnement spécifique des éléments */
@@ -263,16 +270,15 @@
     max-height: 230px;
     object-fit: cover;
     display: block;
-    padding-bottom: 50px;
+    padding-bottom: 3em;
 
   }
 
   .grid-k-text {
-    padding: 20px;
+    padding: 1.5em;
     text-align: left;
     align-self: center; /* aligne le contenu en haut */
     justify-self: start;
-    padding-bottom: 50px;
   }
 
 
@@ -388,7 +394,7 @@
 
   .middle .yellow-bar-K-bottom {
     position: absolute;
-    top: 442px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    top: 444px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
@@ -400,7 +406,7 @@
 
   .middle .yellow-bar-K-top {
     position: absolute;
-    top: -253px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    top: -251px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
     align-items: center;
     transform: translateX(-50%);
     width: 1px;
