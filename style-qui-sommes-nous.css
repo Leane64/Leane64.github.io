@@ -3,9 +3,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto; /* s'ajuste selon le contenu */
-    gap: 20px;
-    margin: 100px;
-    margin-top: 20px;
+    gap: 1em;
+    margin: 5em;
+    margin-top: 1em;
 }
 
 /* Texte en haut à gauche */
@@ -13,9 +13,9 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     color: white;
-    font-size: 1.1em;
+    font-size: 0.8em;
     text-align: left;
-    padding: 30px;
+    padding:2em;
     border-top: 3px solid #ffcc32;
     border-left: 3px solid #ffcc32;
     text-shadow:
@@ -33,7 +33,7 @@
 }
 .image-bottom-left img {
     width: 100%;
-    height: 250px;
+    height: 17em;
     display: block;
     border-radius: 6px;
 }
