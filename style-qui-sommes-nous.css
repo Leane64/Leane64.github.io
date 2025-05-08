@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto; /* s'ajuste selon le contenu */
     gap: 1em;
-    margin: 5em;
+    margin: 7vw;
     margin-top: 1em;
 }
 
@@ -85,7 +85,7 @@
 
 .mosaique-biomim-background{
     background-color: #61615b;  
-    margin: 100px;
+    margin: 7vw;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -165,7 +165,7 @@
     align-items: stretch;
     padding-top: 2em;
     position: relative;
-    margin: 5em;
+    margin: 7vw;
 
 }
 
