@@ -99,4 +99,44 @@
 
 
 
+
+
+
+
+
+
+
+
+
+  @media screen and (orientation: portrait) {
+
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        margin: 1.5em 7vw;
+        height: 700px;
+    }
+
+
+    .img-1,
+    .img-2,
+    .img-3 {
+        grid-column: unset;
+        grid-row: unset;
+        height: 400px;
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
   
