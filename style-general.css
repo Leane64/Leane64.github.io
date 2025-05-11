@@ -19,6 +19,8 @@
     max-width: 100%; /* Assure-toi que le body ne dépasse pas la largeur de l'écran */
     margin: 0 auto;
     overflow-x: hidden; /* Cache tout débordement horizontal */
+    margin-left: 7vw;
+    margin-right: 7vw;
   }
 
 
@@ -26,10 +28,10 @@
 
 
 /*
+
   * {
     outline: 3px solid red;
   }
-
 
 
   
@@ -55,26 +57,6 @@
 
 
 
-header {
-    display: flex;
-    justify-content: space-between; /* espace entre logo à gauche et nav à droite */
-    align-items: center;        
-    padding: 1em 2em;
-    background-color: hsla(0, 0%, 98%, 0.8);
-    /* background-color: whitesmoke; */
-    max-width: 100vw; 
-
-
-  }
-  
-  header img {
-    height: auto;
-    max-width: 20vw;
-    object-fit: contain; /* les proportions restent intacts */
-    /*
-    
-    height: auto;  à ajuster selon la taille de ton logo */
-  }
 
 
   section.top-page p {
@@ -97,19 +79,6 @@ header {
      border : none;
      padding: 0px;
 }
-
-@media screen and (orientation: portrait) {
-  .header img {
-    max-width: 20vw;
-  }
-
-  section.top-page p {
-    font-size: 0.8em;
-}
-
-
-}
-
 
 
 
@@ -243,6 +212,12 @@ h3 {
     position: relative;
 }
 
+@media screen and (orientation: portrait) {
+  .text-right, .text-left{
+    font-size: 0.8em;
+  }
+}
+
 .text-right::before {
     content: " ";
     position: absolute;
@@ -267,7 +242,7 @@ h3 {
   text-align: left;
   padding: 1.5em;
   margin-left: 7vw;
-  margin-right: 60px;
+  margin-right: 7vw;
   padding-bottom: 70px;
   border-top: 0px solid #ffcc32;
   border-left: 3px solid #ffcc32;
@@ -335,18 +310,7 @@ h3 {
   }
   
 
-  
-  @media screen and (orientation: portrait) {
-    .contact-button {
-      padding: 0.5em 1.7em;
-      font-size: 1.3em;
-  
 
-    }
-  
-  
-  }
-  
   
 
 /*
@@ -408,7 +372,7 @@ h2{
     background-size: cover;
     background-position: center;     
     z-index: -1;
-    filter: brightness(80%);
+    filter: brightness(70%);
   }
 
 
@@ -430,6 +394,30 @@ h2{
 
 
 /* -------------------- MENU DEROULANT -------------------- */
+
+
+header {
+  display: flex;
+  justify-content: space-between; /* espace entre logo à gauche et nav à droite */
+  align-items: center;        
+  padding: 1em 2em;
+  background-color: hsla(0, 0%, 98%, 0.8);
+  /* background-color: whitesmoke; */
+  width: 100vw; 
+  box-sizing: border-box;
+
+
+}
+
+header img {
+  height: auto;
+  max-width: 20vw;
+  object-fit: contain; /* les proportions restent intacts */
+  /*
+  
+  height: auto;  à ajuster selon la taille de ton logo */
+}
+
 
 
 
@@ -498,7 +486,7 @@ nav {
   .dropdown-content a {
     margin-left: 0; /* pas besoin de marge ici */
     padding: 10px 16px;
-    font-size: 1em;
+    font-size: 1.1em;
     top: 0;
     color: #333;
     text-decoration: none;
@@ -530,6 +518,60 @@ nav {
 
 
 
+/* 
+
+img:nth-of-type(2) {
+  display: none;
+}
+
+
+@media screen and (orientation: portrait) {
+  img:first-of-type {
+    display: none;
+  }
+
+  img:nth-of-type(2) {
+    display: block;
+    height: 5em;
+    object-fit: contain;
+  }
+  .nav a, .menu-title{
+    font-size: 2em;
+
+  }
+
+
+    .nav, .menu-title {
+      font-size: 2em;
+      text-align: center; 
+      margin: 0 auto; 
+    }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 body{
     background-color: beige;
@@ -552,21 +594,20 @@ footer {
   padding: 2em;
   margin-top: 20vh;
   opacity: 96%;
-  width: 100vw;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-around;
-  gap: 2em;
+  max-width: 100vw;
   text-align: center;
   margin-bottom: 8em;
-  margin-left: 0;
 }
 
 .footer-top > div {
   flex: 1;
-  max-width: 30vw;
   display: flex;
   flex-direction: column;  /* empile les éléments verticalement */
   align-items: center;     /* centre horizontalement les éléments */
@@ -574,7 +615,7 @@ footer {
 
 .footer-top h3 {
   margin: 1em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .footer-top a {
@@ -582,8 +623,8 @@ footer {
   text-decoration: none;
   margin: 0.5em 0; /* marge verticale seulement */
   display: block;  /* force l'affichage en bloc pour éviter les bugs */
+  font-size: 1.1em;
 }
-
 
 
 
@@ -614,6 +655,10 @@ footer {
   align-items: center;
 }
 
+.footer-right p {
+  text-align: right;
+}
+
 
 .footer-left a {
   margin-right: 10px;
@@ -621,12 +666,12 @@ footer {
 
 footer img {
   height: 60px;
+
 }
 
 .footer-center img {
   height: 65px;
 }
-
 
 
 

@@ -6,6 +6,7 @@
     gap: 0px;
     margin: 3em 7vw 3em 7vw;
     color: white;
+    border: 1px solid #ffcc32;
   }
   
   .grid p{
@@ -38,6 +39,17 @@
     width: 30vw;
     height: 525px;
     padding: 1em;
+  }
+
+  @media screen and (orientation: portrait) {
+    .grid img{
+      height: 600px;
+    }
+
+    .grid img:first-of-type{
+      margin-top: 5em;
+    }
+
   }
 
 

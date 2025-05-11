@@ -360,7 +360,7 @@
   }
   .middle .yellow-bar {
     position: absolute;
-    top: calc(50% + (108px / 2)); /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    top: calc(50% + (108px / 2));  /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
     left: 50%;
     transform: translateX(-50%);
     width: 1px;
@@ -527,7 +527,8 @@
   
   .phases-container {
     display: flex;
-    border: 2px solid #6a7a53;
+    border: 1px solid #ffcc32;
+    /*border: 2px solid #6a7a53; */
     flex-wrap: wrap; /* pour une meilleure adaptabilité */
     margin: 2em 7vw;
   }
@@ -584,7 +585,8 @@
   .offre-phase .highlight-orange{
     font-style: italic;
   }
-  
+
+
 
 
 
