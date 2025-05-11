@@ -103,7 +103,7 @@
 
 
 
-/*
+
 @media screen and (orientation: portrait) {
 
   .biomim-challenge {
@@ -111,7 +111,8 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    margin: 0;
+    margin: 5em 7vw;
+    margin-left: -5em;
     color: white;
     border: 1px solid #ffcc32;
     background-color: #61615b; 
@@ -119,6 +120,8 @@
     padding: 0;
     width: 60vw;
   }
+
+
 
   .biomim-challenge-text {
     border: none;
@@ -163,7 +166,6 @@
 }
 
 
-*/
 
 
 
