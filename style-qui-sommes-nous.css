@@ -320,7 +320,7 @@
   .colonne-3 p {
     text-align: center;
     padding: 3em;
-    max-width: 40vw; /* Limiter la largeur */
+    max-width: 20vw; /* Limiter la largeur */
     margin: 0 auto; /* Centrer le texte horizontalement */
     display: block;
   }
