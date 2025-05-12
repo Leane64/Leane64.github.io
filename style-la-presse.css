@@ -118,6 +118,7 @@
     padding: 0;
     width: 80vw;
     margin-left: -4em;
+    margin-top: 150px;
   }
 
 
@@ -137,7 +138,14 @@
   width: 100%; /* ou max-width: 100%; */
   box-sizing: border-box;
   padding: 1em;
+  padding-bottom: 2em;
   border: none;
+}
+
+
+.biomim-challenge-text h4{
+  font-size: 1.8em;
+
 }
 
 
@@ -256,6 +264,57 @@
 
 
 
+@media screen and (orientation: portrait) {
+
+  .dassault-system {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    color: white;
+    border: 1px solid #ffcc32;
+    background-color: #61615b;
+    box-sizing: border-box;
+    padding: 2em;
+    width: 80vw;
+    margin-left: -4em;
+  }
+
+  .dassault-system-text {
+    border: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  .dassault-system-text h4{
+    font-size: 1.8em;
+
+  }
+
+  .dassault-system-img {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .dassault-system-img img {
+    width: 30vw;
+    height: auto;
+    border-radius: 6px;
+  }
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -332,6 +391,7 @@
 .partenaires a img:hover {
   transform: scale(1.05); /* léger zoom au survol */
 }
+
 
 
 
