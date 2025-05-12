@@ -12,7 +12,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.1em !important;
     text-align: left;
     padding:2em;
     border-top: 3px solid #ffcc32;
@@ -48,9 +48,6 @@
     display: block;
     border-radius: 6px;
 }
-
-
-
 
 
 
@@ -272,3 +269,77 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation: portrait) {
+
+  .nos-valeurs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em;
+
+  }
+
+  .colonne-1, .colonne-2, .colonne-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: stretch;
+  }
+
+  /* Les descriptions doivent avoir la même hauteur */
+  .Description-valeur {
+    background-color: #61615b;
+    color: white;
+    padding: 3em;
+    text-align: center;
+    border: 1px solid #ffcc32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permet aux descriptions d'occuper un espace égal */
+    min-height: 0; /* Empêche l'élément d'être étiré */
+  }
+
+  /* Centrer les éléments à l'intérieur */
+  .colonne-1 p,
+  .colonne-2 p,
+  .colonne-3 p {
+    text-align: center;
+    padding: 3em;
+    max-width: 40vw; /* Limiter la largeur */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    display: block;
+  }
+
+  /* Organiser l'ordre des éléments (Nom à gauche et Description à droite) */
+  .colonne-1 .Description-valeur,
+  .colonne-3 .Description-valeur {
+    order: 2; /* Description à gauche */
+  }
+
+  .colonne-1 .Nom-valeur,
+  .colonne-3 .Nom-valeur {
+    order: 1; /* Nom à droite */
+  }
+
+  .colonne-2 .Nom-valeur {
+    order: 2; /* Nom à gauche */
+  }
+
+  .colonne-2 .Description-valeur {
+    order: 1; /* Description à droite */
+  }
+
+}
