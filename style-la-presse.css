@@ -111,46 +111,54 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    margin: 5em 7vw;
-    margin-left: -5em;
     color: white;
     border: 1px solid #ffcc32;
     background-color: #61615b; 
     box-sizing: border-box;
     padding: 0;
-    width: 60vw;
+    width: 80vw;
+    margin-left: -4em;
   }
 
 
 
   .biomim-challenge-text {
     border: none;
+    margin: 0px;
   }
   
+
 
   .biomim-challenge-img {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    width: 100%;
-    flex-wrap: wrap;
-    border: none;
-    padding: 2em;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  width: 100%; /* ou max-width: 100%; */
+  box-sizing: border-box;
+  padding: 1em;
+  border: none;
+}
+
+
   
 
-  .biomim-challenge-img > img,
-  .biomim-challenge-img .video-lien {
-    width: 45%;
-    max-width: 45%;
-  }
-  
-  .biomim-challenge-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    display: block;
-  }
+.biomim-challenge-img > img,
+.biomim-challenge-img .video-lien {
+  flex: 1 1 45%;
+  max-width: 45%;
+  box-sizing: border-box;
+}
+
+.biomim-challenge-img img,
+.video-lien img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+}
+
   
   .video-lien img {
     padding: 0;
