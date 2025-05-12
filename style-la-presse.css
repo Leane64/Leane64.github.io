@@ -407,11 +407,14 @@
 
   .partenaires {
     margin-top: 150px;
-    gap: 15vw;
+    gap: 10vw;
     padding: 50px;
   }
   .partenaires img {
-    max-width: 30vw; /* ou une valeur qui te convient, comme 60vw */
+    max-width: auto; /* ou une valeur qui te convient, comme 60vw */
+    height: 150px;
+    object-fit: contain;
+    
   }
 }
 
