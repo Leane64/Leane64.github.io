@@ -301,11 +301,18 @@
     padding: 0;
   }
 
-  .dassault-system-img img {
-    width: 30vw;
-    height: auto;
-    border-radius: 6px;
-  }
+  .dassault-system-img img:first-of-type {
+  width: auto; /* plus grande */
+  height: 10vw;
+  border-radius: 6px;
+}
+
+.dassault-system-img img:nth-of-type(2) {
+  width: 20vw; /* taille normale */
+  height: auto;
+  border-radius: 6px;
+}
+
 
 }
 
@@ -391,6 +398,23 @@
 .partenaires a img:hover {
   transform: scale(1.05); /* léger zoom au survol */
 }
+
+
+
+
+
+@media screen and (orientation: portrait) {
+
+  .partenaires {
+    margin-top: 150px;
+    gap: 15vw;
+    padding: 50px;
+  }
+  .partenaires img {
+    max-width: 30vw; /* ou une valeur qui te convient, comme 60vw */
+  }
+}
+
 
 
 
