@@ -294,7 +294,7 @@
   .dassault-system-img {
     display: flex;
     justify-content: center;
-    gap: 5em;
+    gap: 7em;
     flex-wrap: wrap;
     width: 100%;
     border: none;
