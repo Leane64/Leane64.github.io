@@ -29,8 +29,8 @@
   gap: 0rem; /* espace entre les colonnes */
   align-items: center; /* aligne verticalement les éléments au centre */
   padding: 0px;
-  margin-left: 7vw;
-  margin-right: 7vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   margin-top: 3em;
   color: white;
 }
@@ -39,6 +39,11 @@
     text-align: left;
     align-self: start; /* aligne le contenu en haut */
     justify-self: start; /* colle à gauche de la cellule */
+  }
+
+  .Letter-for p {
+    margin-top: 3em;
+    font-size: 1.3em;
   }
 
   .Letter-for .left h3, p, .Letter-description h3{
@@ -130,13 +135,13 @@
     grid-template-rows: auto auto; /* 2 lignes automatiques */
     gap: 0px; /* espace entre les cellules */
     padding: 2em;
-    margin-left: 7vw;
-    margin-right: 7vw;
     color: white;
     margin-bottom: 7em;
-
   }
 
+  .Letter-description p, .Letter-description-k p {
+    font-size: 1.3em;
+  }
   
 
 
@@ -148,7 +153,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px;
-    height: 250px;
+    height: 300px;
     border-right: 1.5px solid #ffcc32;
     padding-top: 3em;
   }
@@ -217,7 +222,7 @@
   }
 
   .bottom-right img{
-    max-height: 200px;
+    max-height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: 0 20%;
@@ -225,7 +230,7 @@
   }
 
   .A-bottom-right-img{
-    height: 155px;
+    height: 200px;
   }
 
   .bottom-right img {
@@ -237,7 +242,10 @@
 
   
 
+.chameleon {
 
+  object-position: bottom;
+}
 
 
     
@@ -248,9 +256,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     padding: 1.5em;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 7vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
     color: white;
     margin-bottom: 5em;   
   }
@@ -530,7 +538,7 @@
     border: 1px solid #ffcc32;
     /*border: 2px solid #6a7a53; */
     flex-wrap: wrap; /* pour une meilleure adaptabilité */
-    margin: 2em 7vw;
+    margin: 2em 3vw;
   }
   
   .phase {
@@ -573,7 +581,7 @@
 
   .offre-phase p{
     color: white;
-    margin: 5em 7vw;
+    margin: 5em 3vw;
     margin-bottom: 3vw;
   }
 

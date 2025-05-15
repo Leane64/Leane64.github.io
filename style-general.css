@@ -10,21 +10,38 @@
   }
 
   .michroma-regular {
-    font-family: "Michroma", sans-serif;
+    font-family:  sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
+
+  
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
   body {
-    max-width: 100%; /* Assure-toi que le body ne dépasse pas la largeur de l'écran */
+    max-width: 100%; 
     margin: 0 auto;
-    overflow-x: hidden; /* Cache tout débordement horizontal */
+    overflow-x: hidden;
     margin-left: 7vw;
     margin-right: 7vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
 
 
-  
 
 
 /*
@@ -33,48 +50,17 @@
     outline: 3px solid red;
   }
 
-
-  
-  .viewport-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    border: 5px dashed blue;
-    pointer-events: none;
-    z-index: 9999;
-  } */
-  
-  
-  
-  
-
-
-
-
-
-
-
+*/
 
 
 
   section.top-page p {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-align: center;
     font-style: italic;
-    /*font-family: 'Source Serif Pro', serif; 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  */
     line-height: 1.4;
     margin: 3em 4em;
-    font-weight: bolder; 
-    text-shadow: 
-    -1px -1px 0 #5c5447, /* essayer avec #5c5447 */
-     1px -1px 0 #5c5447,
-    -1px  1px 0 #5c5447,
-     1px  1px 0 #5c5447,   
-     1px  1px 0 rgba(0, 0, 0, 0.7);
      width: auto; 
      border : none;
      padding: 0px;
@@ -87,18 +73,13 @@
 
 h1 {
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     padding: 0.5em;
-    margin-top: 0.7em;
-    margin-bottom: 0px;
     font-weight: 600;  
-    text-shadow: 
-    -1px -1px 0 #29302a,
-     1px -1px 0 #29302a,
-    -1px  1px 0 #29302a,
-     1px  1px 0 #29302a,  
-     2px  2px 0 rgba(0, 0, 0, 0.1); /*L'effet "ombre portée" */
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
      
 }
 
@@ -113,21 +94,14 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+    margin-top: 1em;
     
     margin-top: 1em;
-    margin-left: 2.5em;
-    margin-right: 2.5em;
-    font-weight: bold;
-    font-family: Michroma, sans-serif;
 
-    text-shadow:
-    -1px -1px 0 rgb(112, 114, 115),
-     1px -1px 0 rgb(112, 114, 115),
-    -1px  1px 0 rgb(112, 114, 115),
-     1px  1px 0 rgb(112, 114, 115),
-     1px  1px 0 rgba(0, 0, 0, 0.7);
+    /*  font-family: winky-sans, sans-serif; */
+
    
 }
 
@@ -136,7 +110,7 @@ h2 {
 
 h3 {
     color: #ffcc32;
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: bold;
     text-shadow:  0.5px  0.5px 0 darkgoldenrod;
     margin-left: 5em;
@@ -163,97 +137,49 @@ h3 {
 
 
 
-
-
-/*
- p {
-    color: white;
-    line-height: 1.4;
-    font-size: 1.2em;
-    margin-left: 60px;
-    text-align: center;
-    width: 500px;
-    text-shadow: 
-    -1px -1px 0 #5c5447,
-     1px -1px 0 #5c5447,
-    -1px  1px 0 #5c5447,
-     1px  1px 0 #5c5447,   
-     1px  1px 0 rgba(0, 0, 0, 0.7);
-     border-top: 3px solid darkgoldenrod;
-    border-left: 3px solid darkgoldenrod;
-    padding: 20px;
-    padding-bottom: 40px;
-}
-*/
-
-
-
-.right-content h3{
-    text-align: right;
-    margin-right: 7vw;
+.right-content h3, .left-content h3 {
     margin-top: 5em;
 }
 
-.text-right {
-    color: white;
-    font-size: 1.1em;
-    text-align: right;
-    padding: 1.5em;
-    margin-right: 7vw;
-    margin-left: 7vw;
-    border-top: 0px solid #ffcc32;
-    border-right: 3px solid #ffcc32;
-    text-shadow:
-        -1px -1px 0 #5c5447,
-        1px -1px 0 #5c5447,
-        -1px 1px 0 #5c5447,
-        1px 1px 0 #5c5447,
-        1px 1px 0 rgba(0, 0, 0, 0.7);
-    position: relative;
-}
 
-@media screen and (orientation: portrait) {
-  .text-right, .text-left{
-    font-size: 0.8em;
-  }
+.right-content h3{
+  margin-right: 3vw;
+  text-align: right;
 }
-
-.text-right::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%; /*faire apparaitre seulement une partie de border-top */
-    border-top: 3px solid #ffcc32;
-}
-
 
 .left-content h3 {
+  margin-left: 3vw;
   text-align: left;
-  margin-top: 5em;
-  margin-left: 7vw;
 }
 
+
+
+.text-left, .text-right{
+  color: white;
+  font-size: 1.3em;
+  padding: 1.5em;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  padding-bottom: 70px;
+  position: relative;
+}
 
 
 .text-left {
-  color: white;
-  font-size: 1.1em;
   text-align: left;
-  padding: 1.5em;
-  margin-left: 7vw;
-  margin-right: 7vw;
-  padding-bottom: 70px;
   border-top: 0px solid #ffcc32;
   border-left: 3px solid #ffcc32;
-  text-shadow:
-      -1px -1px 0 #5c5447,
-      1px -1px 0 #5c5447,
-      -1px 1px 0 #5c5447,
-      1px 1px 0 #5c5447,
-      1px 1px 0 rgba(0, 0, 0, 0.7);
-  position: relative;
 }
+
+.text-right {
+    text-align: right;   
+    border-top: 0px solid #ffcc32;
+    border-right: 3px solid #ffcc32;
+}
+
+
+
+
 
 .text-left::before {
   content: " ";
@@ -265,15 +191,41 @@ h3 {
 }
 
 
+.text-right::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%; /*faire apparaitre seulement une partie de border-top */
+    border-top: 3px solid #ffcc32;
+}
+
+
+
+
+
+
+
+@media screen and (orientation: portrait) {
+  .text-right, .text-left{
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
 
 /* -------------------- LES FIGURES / ELEMENTS VISUELS -------------------- */
 
 
 .separator {
-    border: 1px solid rgba(186, 115, 0); 
-    height: 1.5px;
-    background-color: rgba(243, 199, 87);
-    width: 45vw;      /* ou 100% si tu veux que ça aille d’un bord à l’autre */
+    /* border: 1px solid rgba(186, 115, 0); 
+    background-color: rgba(243, 199, 87); */
+    height: 2.5px;
+    background-color: #ffcc32;
+    width: 45vw;   
     margin: 10px auto;
     border-radius: 3px;
   }
@@ -312,19 +264,6 @@ h3 {
 
 
   
-
-/*
-h2{
-    text-align: center;
-    font-weight: 200; /*400 c'est l'épaisseur normale
-    font-size: 1.7em;
-    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
-    font-family: Michroma, sans-serif;
-    background-color: bisque;
-    background-image: url(Images/juan-gomez-unsplash.jpg); 
-    background : linear-gradient( #0f2027, #203a43, #2c5364 );
-    background : radial-gradient( #C9D6FF, #DBDBDB );
-} */
 
 
 
@@ -368,7 +307,7 @@ h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("fond_de_base.png");
+    background-image: url("Images/fond_de_base.png");
     background-size: cover;
     background-position: center;     
     z-index: -1;
@@ -586,7 +525,7 @@ body{
 footer {
   display: flex;
   flex-direction: column;
-  background-image: url('fond_pied_de_page.png');
+  background-image: url('Images/Footer/fond_pied_de_page.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
