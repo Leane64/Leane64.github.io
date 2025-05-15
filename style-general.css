@@ -525,7 +525,7 @@ body{
 footer {
   display: flex;
   flex-direction: column;
-  background-image: url('Images/Footer/fond_pied_de_page.png');
+  background-image: url('fond_pied_de_page.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
