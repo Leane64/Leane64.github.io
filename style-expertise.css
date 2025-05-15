@@ -256,8 +256,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     padding: 1.5em;
-    margin-left: 3vw;
-    margin-right: 3vw;
     margin-top: 3vw;
     color: white;
     margin-bottom: 5em;   
@@ -550,16 +548,8 @@
   .phase:last-child {
     border-right: none;
   }
-  
-  .phase-header {
-    background-color: #5b6747;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    height: 2.2em;
-  }
-  
+
+
   .phase-subheader {
     background-color: #3f4d30;
     color: #ffc107;
@@ -567,6 +557,30 @@
     text-align: center;
     font-weight: bold;
     height: 1.2em;
+    font-size: 1.5em;
+  }
+  
+  .phase-header {
+    background-color: #5b6747;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: bold;
+    height: 2.2em;
+    font-size: 1.2em;
+
+    
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  height: 4em;              
+  padding: 0 10px;          
+  box-sizing: border-box;
+  overflow: hidden;       
+  text-wrap: balance;  
+
   }
   
   .phase-content {
@@ -575,6 +589,7 @@
     font-style: italic;
     text-align: center;
     height: 4.2em;
+    font-size: 1.1em;
   }
 
 
@@ -583,6 +598,7 @@
     color: white;
     margin: 5em 3vw;
     margin-bottom: 3vw;
+    font-size: 1.2em;
   }
 
   .offre-phase p:last-of-type {

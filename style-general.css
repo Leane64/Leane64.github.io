@@ -292,7 +292,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("yanping-ma-unsplash.jpg");
+    background-image: url("Images/yanping-ma-unsplash.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.6;      
@@ -307,7 +307,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("fond_de_base.png");
+    background-image: url("Images/fond_de_base.png");
     background-size: cover;
     background-position: center;     
     z-index: -1;
@@ -525,7 +525,7 @@ body{
 footer {
   display: flex;
   flex-direction: column;
-  background-image: url('fond_pied_de_page.png');
+  background-image: url('Images/Footer/fond_pied_de_page.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
@@ -554,7 +554,7 @@ footer {
 
 .footer-top h3 {
   margin: 1em;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .footer-top a {
@@ -562,7 +562,7 @@ footer {
   text-decoration: none;
   margin: 0.5em 0; /* marge verticale seulement */
   display: block;  /* force l'affichage en bloc pour éviter les bugs */
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 
@@ -604,12 +604,12 @@ footer {
 }
 
 footer img {
-  height: 60px;
+  height: 70px;
 
 }
 
 .footer-center img {
-  height: 65px;
+  height: 75px;
 }
 
 
