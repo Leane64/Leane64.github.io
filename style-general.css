@@ -307,7 +307,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("Images/fond_de_base.png");
+    background-image: url("fond_de_base.png");
     background-size: cover;
     background-position: center;     
     z-index: -1;
@@ -525,7 +525,7 @@ body{
 footer {
   display: flex;
   flex-direction: column;
-  background-image: url('Images/Footer/fond_pied_de_page.png');
+  background-image: url('fond_pied_de_page.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
